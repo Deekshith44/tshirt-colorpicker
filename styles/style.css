@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Poppins:wght@300&family=Rubik&display=swap');
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+
+.section_container{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100vw;
+    margin: 15px auto;
+}
+
+.Section-left img
+{
+   width: 400px;
+   height: 450px;
+   padding: 20px;
+ 
+}
+
+.color
+{
+    width: 35px;
+    height: 35px;
+    background: none;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+
+.color-burgundy 
+{
+    background-color: rgb(128,0,32);
+}
+
+.color-orenge
+{
+    background-color: rgb(204,85,0);
+}
+
+.color-clayBeige
+{
+    background-color: #ab9784;
+}
+
+.color-lightBeige
+{
+    background-color:  #EAD2A8;
+}
+
+.color-lightBlue
+{
+    background-color: lightblue;
+}
+
+.active-color
+{
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.3);
+}
+.color:hover
+{
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.3);
+}
+
+
+.color-content
+{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.3);
+    margin-left: 20px;
+}
+
+.color-content h3
+{
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding: 10px auto;
+}
+
+
+.color-groups
+{
+    padding: 1rem 0;
+    display: flex;
+    margin-left: 20px;
+}
+
+.vertical
+{
+    width: 1px;
+    height: 550px;
+    background-color: silver;
+}
+
+
+
+
+
+.Section-right
+{
+    width: 50%;
+    margin-top: 7px;
+  
+}
+
+.Section-right .heading-name
+{
+    padding: 10px 0;
+}
+
+.heading-name h2
+{
+    font-size: 32px;
+}
+
+.heading-name h5
+{
+    color: #ccc;
+    opacity: 0.4px;
+    padding-top: 4px;
+}
+
+.heading-name h5 span
+{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.heading-name p
+{
+    padding-top: 20px;
+    color: #ab9784;
+    width: 90%;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    
+}
+
+.price
+{
+    margin-top: 50px;
+}
+ 
+.price h2
+{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.price h2 span
+{
+   font-size: 13px;
+   color: #ccc; 
+}
+
+
+.size
+{
+    margin-top: 65px;
+    padding-bottom: 10px;
+   
+    
+    
+}
+
+.size h4
+{
+    padding-bottom: 10px;
+}
+
+.size select
+{
+   
+    width: 220px;
+    height: 33px;
+    border: 2px solid black;
+}
+
+
+.cart  a{
+   
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 17px;
+   color: white;
+      
+}
+
+.cart  .cta 
+{
+    background-color: rgb(240, 48, 112);
+    padding: 10px 20px;
+    border: 2px solid rgb(240, 48, 112) ;
+    border-radius: 15px;
+    transition: .4s;
+
+}
+
+.cart  .cta:hover
+{
+    border: 2px solid rgb(240, 48, 112);
+    background-color: white;
+    color: black;
+} 
+
+.cart{
+    margin-top: 60px;
+   
+}
+
+
+@media screen and (max-width:900px) {
+
+    html,body{
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+
+    }
+    .section_container{
+        width: 100vw;
+        text-align: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap:30px
+    }
+
+    .vertical{
+        display: none;
+    }
+
+   .Section-right{
+     width: 80%;
+
+   }
+
+   .heading-name h1{
+    width: 100vw;
+   }
+
+   .heading-name p{
+    width: 100%;
+   }
+
+   .Section-left{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+        
+
+   }
+
+   .color-content-holder{
+   
+    width: 90%;
+    margin-left: 8px;
+    
+   }
+
+  
+   
+}
+
+
+
